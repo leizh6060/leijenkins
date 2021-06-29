@@ -1,1 +1,3 @@
-def printHello() {    sh 'echo "hello lei from library"'}
+def call(String name = 'User') {
+		echo "Welcome, ${name}."
+}
