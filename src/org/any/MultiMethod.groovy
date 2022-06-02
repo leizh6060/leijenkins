@@ -7,6 +7,7 @@ class MultiMethod {
     }
     def foo() {
         steps.echo "Hello foo from src/org/any/MultiMethod.groovy"
+        steps.println"lei"
     }
     def bar() {
         steps.echo "Hello bar from src/org/any/MultiMethod.groovy"
