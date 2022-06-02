@@ -1,3 +1,0 @@
-// Jenkinsfile
-@Library('LeiDemo') _
-welcomeJob 'lambdatest'
