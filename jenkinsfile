@@ -1,0 +1,19 @@
+@Library('LeiDemo') _
+import org.any.*
+//import org.any.MultiMethod
+
+pipeline {
+    agent any;
+    stages {
+        stage('log') {
+            steps {
+                script { 
+                    def x= new MultiMethod(this);
+                    x.foo()
+                    x.bar()
+                }
+                
+            }
+        }
+    }
+}
