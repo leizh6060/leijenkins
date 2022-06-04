@@ -8,8 +8,9 @@ pipeline {
         stage('log') {
             steps {
                 script { 
-                    def x= new MultiMethod(this);
-                    x.foo()
+                   // def x= new MultiMethod(this);
+                   def x= new MultiMethod();
+		   x.foo()
                     x.bar()
                 }
                 
